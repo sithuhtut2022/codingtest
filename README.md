@@ -173,9 +173,15 @@ output/
 
 ## Prerequisites
 
-- .NET 8.0 SDK or higher
-- Google Chrome browser (for Selenium WebDriver)
-- Internet connection
+⚠️ **Required Software (must be installed manually):**
+- **.NET 8.0 SDK** or higher - [Download here](https://dotnet.microsoft.com/download/dotnet/8.0)
+- **Google Chrome browser** - [Download here](https://www.google.com/chrome/) *(Required for Selenium WebDriver)*
+- **Internet connection** - For web scraping and package downloads
+
+✅ **Automatic (no manual installation required):**
+- All NuGet packages (restored via `dotnet restore`)
+- ChromeDriver (managed by Selenium package)
+- Runtime dependencies
 
 ## Installation
 
@@ -347,6 +353,24 @@ Set `"UseHeadlessBrowser": false` in `appsettings.json` to see what the browser 
 ### Chrome Driver Issues
 - Ensure Google Chrome is installed
 - The ChromeDriver is automatically managed by the Selenium.WebDriver.ChromeDriver package
+
+## 🚨 Common Setup Issues
+
+### **"dotnet command not found"**
+- **Solution**: Install .NET 8.0 SDK from [Microsoft's official site](https://dotnet.microsoft.com/download/dotnet/8.0)
+- **Verify**: Run `dotnet --version` (should show 8.x.x)
+
+### **"Chrome browser not found" or Selenium errors**
+- **Solution**: Install Google Chrome browser from [google.com/chrome](https://www.google.com/chrome/)
+- **Note**: ChromeDriver is automatically downloaded by NuGet package
+
+### **Build warnings about nullable types**
+- **Status**: Safe to ignore - these are code quality warnings, not errors
+- **Impact**: Application runs perfectly despite warnings
+
+### **Package restore fails**
+- **Solution**: Ensure internet connection and run `dotnet restore --force`
+- **Alternative**: Delete `bin/` and `obj/` folders, then rebuild
 
 ### No Partners Found
 - Check if the website structure has changed
