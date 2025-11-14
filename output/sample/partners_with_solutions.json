@@ -1,0 +1,3451 @@
+[
+  {
+    "partnerName": "MGS",
+    "solutions": [
+      {
+        "solutionName": "Banking process Automation For OpenText- BPA",
+        "partnerName": "MGS"
+      },
+      {
+        "solutionName": "Contract Management Workspace - CMW",
+        "partnerName": "MGS"
+      },
+      {
+        "solutionName": "Correspondence Workspace System- CWS",
+        "partnerName": "MGS"
+      },
+      {
+        "solutionName": "Digital Acceleration Solution for OpenText",
+        "partnerName": "MGS"
+      },
+      {
+        "solutionName": "Digital Quality Management - DQM for OpenText",
+        "partnerName": "MGS"
+      },
+      {
+        "solutionName": "Intelligent Robotic Capturing - IRC",
+        "partnerName": "MGS"
+      },
+      {
+        "solutionName": "Legal case Management For OpenText - LCM",
+        "partnerName": "MGS"
+      },
+      {
+        "solutionName": "Patient Digital Record - PDR For OpenText",
+        "partnerName": "MGS"
+      },
+      {
+        "solutionName": "Policy and Procedure Management For OpenText - PPs",
+        "partnerName": "MGS"
+      }
+    ],
+    "solutionCount": 9
+  },
+  {
+    "partnerName": "One Fox B.V.",
+    "solutions": [
+      {
+        "solutionName": "CMIS-Adapter",
+        "partnerName": "One Fox B.V."
+      },
+      {
+        "solutionName": "Content Services for Esri",
+        "partnerName": "One Fox B.V."
+      },
+      {
+        "solutionName": "Content Services for Microsoft Flow",
+        "partnerName": "One Fox B.V."
+      },
+      {
+        "solutionName": "eBUS",
+        "partnerName": "One Fox B.V."
+      },
+      {
+        "solutionName": "eDAV",
+        "partnerName": "One Fox B.V."
+      },
+      {
+        "solutionName": "Media Archive",
+        "partnerName": "One Fox B.V."
+      },
+      {
+        "solutionName": "Meeting Center",
+        "partnerName": "One Fox B.V."
+      },
+      {
+        "solutionName": "OpenText Power Automate Connector for OpenText Content Server",
+        "partnerName": "One Fox B.V."
+      },
+      {
+        "solutionName": "Power Automate for eDOCS",
+        "partnerName": "One Fox B.V."
+      }
+    ],
+    "solutionCount": 9
+  },
+  {
+    "partnerName": "Syntergy Inc",
+    "solutions": [
+      {
+        "solutionName": "Content Mover",
+        "partnerName": "Syntergy Inc"
+      },
+      {
+        "solutionName": "Content Sentry for OpenText Content Server",
+        "partnerName": "Syntergy Inc"
+      },
+      {
+        "solutionName": "Director",
+        "partnerName": "Syntergy Inc"
+      },
+      {
+        "solutionName": "EMC Centera Storage Connector for Content Server",
+        "partnerName": "Syntergy Inc"
+      },
+      {
+        "solutionName": "OpenText eDOCS Exporter",
+        "partnerName": "Syntergy Inc"
+      },
+      {
+        "solutionName": "Replicator",
+        "partnerName": "Syntergy Inc"
+      },
+      {
+        "solutionName": "Storage Provider Migrator for OpenText Content Server",
+        "partnerName": "Syntergy Inc"
+      },
+      {
+        "solutionName": "Syntergy Data Manager",
+        "partnerName": "Syntergy Inc"
+      },
+      {
+        "solutionName": "Upgrade Accelerator for Livelink \u0026 Content Server",
+        "partnerName": "Syntergy Inc"
+      }
+    ],
+    "solutionCount": 9
+  },
+  {
+    "partnerName": "Matrix Logic Corporation",
+    "solutions": [
+      {
+        "solutionName": "eDOCS Document/Contract/Records Management Consulting Services",
+        "partnerName": "Matrix Logic Corporation"
+      },
+      {
+        "solutionName": "Fusion Document Service",
+        "partnerName": "Matrix Logic Corporation"
+      },
+      {
+        "solutionName": "Guided Searches for eDOCS DM",
+        "partnerName": "Matrix Logic Corporation"
+      },
+      {
+        "solutionName": "Image Processing Suite for eDOCS",
+        "partnerName": "Matrix Logic Corporation"
+      },
+      {
+        "solutionName": "Media Manager for eDOCS",
+        "partnerName": "Matrix Logic Corporation"
+      },
+      {
+        "solutionName": "ProfilePlus for eDOCS DM",
+        "partnerName": "Matrix Logic Corporation"
+      },
+      {
+        "solutionName": "RM Solution Suite for eDOCS RM",
+        "partnerName": "Matrix Logic Corporation"
+      },
+      {
+        "solutionName": "SharePoint Service for eDOCS DM",
+        "partnerName": "Matrix Logic Corporation"
+      }
+    ],
+    "solutionCount": 8
+  },
+  {
+    "partnerName": "MIRANDA Partners A/S",
+    "solutions": [
+      {
+        "solutionName": "DM Connect Manager for eDOCS",
+        "partnerName": "MIRANDA Partners A/S"
+      },
+      {
+        "solutionName": "DM Sync Manager for eDOCS",
+        "partnerName": "MIRANDA Partners A/S"
+      },
+      {
+        "solutionName": "Document Info Manager for eDOCS",
+        "partnerName": "MIRANDA Partners A/S"
+      },
+      {
+        "solutionName": "eDOCS DM Audit",
+        "partnerName": "MIRANDA Partners A/S"
+      },
+      {
+        "solutionName": "Meta Data Manager for eDOCS (MDM)",
+        "partnerName": "MIRANDA Partners A/S"
+      },
+      {
+        "solutionName": "Recover Manager for eDOCS",
+        "partnerName": "MIRANDA Partners A/S"
+      },
+      {
+        "solutionName": "Smart Search Manager for eDOCS",
+        "partnerName": "MIRANDA Partners A/S"
+      },
+      {
+        "solutionName": "Unlock Manager for eDOCS",
+        "partnerName": "MIRANDA Partners A/S"
+      }
+    ],
+    "solutionCount": 8
+  },
+  {
+    "partnerName": "Wertheim Global Solutions",
+    "solutions": [
+      {
+        "solutionName": "DMFolders for eDOCS",
+        "partnerName": "Wertheim Global Solutions"
+      },
+      {
+        "solutionName": "dmsSync for eDOCS",
+        "partnerName": "Wertheim Global Solutions"
+      },
+      {
+        "solutionName": "Guardian for Content Server",
+        "partnerName": "Wertheim Global Solutions"
+      },
+      {
+        "solutionName": "Guardian for eDOCS",
+        "partnerName": "Wertheim Global Solutions"
+      },
+      {
+        "solutionName": "WincArchive for eDOCS",
+        "partnerName": "Wertheim Global Solutions"
+      },
+      {
+        "solutionName": "WincSync for eDOCS",
+        "partnerName": "Wertheim Global Solutions"
+      },
+      {
+        "solutionName": "WincTools for eDOCS",
+        "partnerName": "Wertheim Global Solutions"
+      },
+      {
+        "solutionName": "WincWall for eDOCS",
+        "partnerName": "Wertheim Global Solutions"
+      }
+    ],
+    "solutionCount": 8
+  },
+  {
+    "partnerName": "Acheron Software Consultancy Private Limited",
+    "solutions": [
+      {
+        "solutionName": "Media Project Management for OTMM by Acheron",
+        "partnerName": "Acheron Software Consultancy Private Limited"
+      },
+      {
+        "solutionName": "OpenText Marketing \u0026 Media Management by Acheron",
+        "partnerName": "Acheron Software Consultancy Private Limited"
+      },
+      {
+        "solutionName": "OpenText Media Management Connector for Salesforce by Acheron",
+        "partnerName": "Acheron Software Consultancy Private Limited"
+      },
+      {
+        "solutionName": "OpenText Media Management Connector for Salesforce Marketing Cloud by Acheron",
+        "partnerName": "Acheron Software Consultancy Private Limited"
+      },
+      {
+        "solutionName": "OpenText MediaManagement Connector for CHILI publish by Acheron",
+        "partnerName": "Acheron Software Consultancy Private Limited"
+      },
+      {
+        "solutionName": "OpenText Medical Legal Review by Acheron",
+        "partnerName": "Acheron Software Consultancy Private Limited"
+      },
+      {
+        "solutionName": "Purchase Order Approval Management (PAM) Solution",
+        "partnerName": "Acheron Software Consultancy Private Limited"
+      }
+    ],
+    "solutionCount": 7
+  },
+  {
+    "partnerName": "Cassia Content Management",
+    "solutions": [
+      {
+        "solutionName": "Content Suite Security and Productivity Pack",
+        "partnerName": "Cassia Content Management Inc"
+      },
+      {
+        "solutionName": "Enhanced Multilingual Capabilities Module",
+        "partnerName": "Cassia Content Management Inc"
+      },
+      {
+        "solutionName": "Language Pack Development for OpenText Content Server",
+        "partnerName": "Cassia Content Management Inc"
+      },
+      {
+        "solutionName": "Multilingual Module for Content Server (EMLC)",
+        "partnerName": "Cassia Content Management Inc"
+      },
+      {
+        "solutionName": "OpenText Translator for Content Suite - xECM Extension",
+        "partnerName": "Cassia Content Management Inc"
+      },
+      {
+        "solutionName": "OpenText Translator for Content Suite Platform by Cassia",
+        "partnerName": "Cassia Content Management Inc"
+      },
+      {
+        "solutionName": "Records Disposition Approval Module for Content Suite",
+        "partnerName": "Cassia Content Management Inc"
+      }
+    ],
+    "solutionCount": 7
+  },
+  {
+    "partnerName": "Global Cents",
+    "solutions": [
+      {
+        "solutionName": "OpenText Power Tools  for Content Export by Global Cents",
+        "partnerName": "Global Cents"
+      },
+      {
+        "solutionName": "OpenText Power Tools  for Documents by Global Cents",
+        "partnerName": "Global Cents"
+      },
+      {
+        "solutionName": "OpenText Power Tools  for Workflow and Reporting by Global Cents",
+        "partnerName": "Global Cents"
+      },
+      {
+        "solutionName": "OpenText Power Tools for  Electronic Signatures\u2122 by Global Cents",
+        "partnerName": "Global Cents"
+      },
+      {
+        "solutionName": "OpenText Power Tools for Archiving by Global Cents",
+        "partnerName": "Global Cents"
+      },
+      {
+        "solutionName": "OpenText Power Tools for Deployments by Global Cents",
+        "partnerName": "Global Cents"
+      }
+    ],
+    "solutionCount": 6
+  },
+  {
+    "partnerName": "STRATESYS TECHNOLOGY SOLUTIONS, SL",
+    "solutions": [
+      {
+        "solutionName": "OpenText Electronic Common Technical Document for Content Suite Platform by Stra",
+        "partnerName": "STRATESYS TECHNOLOGY SOLUTIONS, SL"
+      },
+      {
+        "solutionName": "OpenText Electronic Trial Master File Management for Content Suite Platform by S",
+        "partnerName": "STRATESYS TECHNOLOGY SOLUTIONS, SL"
+      },
+      {
+        "solutionName": "OpenText GxP Document Management System for Content Suite Platform by Stratesys",
+        "partnerName": "STRATESYS TECHNOLOGY SOLUTIONS, SL"
+      },
+      {
+        "solutionName": "OpenText Quality Event Management for Content Suite Platform by Stratesys",
+        "partnerName": "STRATESYS TECHNOLOGY SOLUTIONS, SL"
+      },
+      {
+        "solutionName": "SOP Management",
+        "partnerName": "STRATESYS TECHNOLOGY SOLUTIONS, SL"
+      }
+    ],
+    "solutionCount": 5
+  },
+  {
+    "partnerName": "Cad-Capture Software Solutions Ltd",
+    "solutions": [
+      {
+        "solutionName": "Asset Navigation for Energy",
+        "partnerName": "Cad-Capture Software Solutions Ltd."
+      },
+      {
+        "solutionName": "Cad-Capture\u2019s Engineering Suite for eDOCS DM",
+        "partnerName": "Cad-Capture Software Solutions Ltd."
+      },
+      {
+        "solutionName": "CaptureVue for Content Server \u0026 eDOCS DM",
+        "partnerName": "Cad-Capture Software Solutions Ltd."
+      },
+      {
+        "solutionName": "OpenText Document Linking for Content Server by Cad-Capture",
+        "partnerName": "Cad-Capture Software Solutions Ltd."
+      }
+    ],
+    "solutionCount": 4
+  },
+  {
+    "partnerName": "complon GmbH",
+    "solutions": [
+      {
+        "solutionName": "complon\u00AE Business Solution xECM for CONTRACTS",
+        "partnerName": "complon GmbH"
+      },
+      {
+        "solutionName": "complon\u00AE Business Solution xECM for LEGAL",
+        "partnerName": "complon GmbH"
+      },
+      {
+        "solutionName": "complon\u00AE Business Solution xECM for PROCUREMENT",
+        "partnerName": "complon GmbH"
+      },
+      {
+        "solutionName": "complon\u00AE Business Solution xECM for SALES",
+        "partnerName": "complon GmbH"
+      }
+    ],
+    "solutionCount": 4
+  },
+  {
+    "partnerName": "CyanGate",
+    "solutions": [
+      {
+        "solutionName": "Cloud Storage Plugin",
+        "partnerName": "CyanGate"
+      },
+      {
+        "solutionName": "OpenText Media Management Connector for Adobe Experience Manager by Cyangate",
+        "partnerName": "CyanGate"
+      },
+      {
+        "solutionName": "OpenText Media Management Connector for FADEL Rights Cloud Manager by Cyangate",
+        "partnerName": "CyanGate"
+      },
+      {
+        "solutionName": "OpenText Rights Cloud for Media Management by FADEL",
+        "partnerName": "CyanGate"
+      }
+    ],
+    "solutionCount": 4
+  },
+  {
+    "partnerName": "Shinydocs Corporation",
+    "solutions": [
+      {
+        "solutionName": "OpenText Shinydrive for Documentum by Shinydocs",
+        "partnerName": "Shinydocs Corporation"
+      },
+      {
+        "solutionName": "OpenText Shinydrive for Microsoft SharePoint by Shinydocs",
+        "partnerName": "Shinydocs Corporation"
+      },
+      {
+        "solutionName": "Shinydocs",
+        "partnerName": "Shinydocs Corporation"
+      },
+      {
+        "solutionName": "Shinydrive",
+        "partnerName": "Shinydocs Corporation"
+      }
+    ],
+    "solutionCount": 4
+  },
+  {
+    "partnerName": "Avaali Solutions Pvt. Ltd",
+    "solutions": [
+      {
+        "solutionName": "Master Data Maintenance for Content Suite / xECM",
+        "partnerName": "Avaali Solutions Pvt. Ltd"
+      },
+      {
+        "solutionName": "Velocious Master Data Management Solution",
+        "partnerName": "Avaali Solutions Pvt. Ltd"
+      },
+      {
+        "solutionName": "Velocious Supplier Relationship Management Application",
+        "partnerName": "Avaali Solutions Pvt. Ltd"
+      }
+    ],
+    "solutionCount": 3
+  },
+  {
+    "partnerName": "Cognizant Technology Solutions U.S. Corp.",
+    "solutions": [
+      {
+        "solutionName": "Cognizant - eDOCs DM Library Consolidation",
+        "partnerName": "Cognizant Technology Solutions U.S. Corp."
+      },
+      {
+        "solutionName": "ECM enabled Geographic Information System (GIS)",
+        "partnerName": "Cognizant Technology Solutions U.S. Corp."
+      },
+      {
+        "solutionName": "eDocs solutions implementation, managed and integration services",
+        "partnerName": "Cognizant Technology Solutions U.S. Corp."
+      }
+    ],
+    "solutionCount": 3
+  },
+  {
+    "partnerName": "Digital Mind AS",
+    "solutions": [
+      {
+        "solutionName": "DM CS Auto Numbering Module",
+        "partnerName": "Digital Mind AS"
+      },
+      {
+        "solutionName": "DM CS Content Export\u002B Module",
+        "partnerName": "Digital Mind AS"
+      },
+      {
+        "solutionName": "DM CS EventScript Module for Web Report",
+        "partnerName": "Digital Mind AS"
+      }
+    ],
+    "solutionCount": 3
+  },
+  {
+    "partnerName": "Mediawide UK Ltd",
+    "solutions": [
+      {
+        "solutionName": "Asset Builder for Media Management",
+        "partnerName": "Mediawide UK Ltd"
+      },
+      {
+        "solutionName": "Mediawide Interactive Personalized Videos for Exstream",
+        "partnerName": "Mediawide UK Ltd"
+      },
+      {
+        "solutionName": "OpenText Content Localization for Media Management by Mediawide",
+        "partnerName": "Mediawide UK Ltd"
+      }
+    ],
+    "solutionCount": 3
+  },
+  {
+    "partnerName": "AEROW SAS",
+    "solutions": [
+      {
+        "solutionName": "eBusiness Information Management",
+        "partnerName": "AEROW SAS"
+      },
+      {
+        "solutionName": "Gallery",
+        "partnerName": "AEROW SAS"
+      }
+    ],
+    "solutionCount": 2
+  },
+  {
+    "partnerName": "AnswerModules Sagl",
+    "solutions": [
+      {
+        "solutionName": "Module Suite for OpenText Content Suite \u0026 Extended ECM",
+        "partnerName": "AnswerModules Sagl"
+      },
+      {
+        "solutionName": "OpenText Web Forms for Content Suite Platform by AnswerModules",
+        "partnerName": "AnswerModules Sagl"
+      }
+    ],
+    "solutionCount": 2
+  },
+  {
+    "partnerName": "EzeScan",
+    "solutions": [
+      {
+        "solutionName": "EzeScan Enterprise Capture for PaperCut",
+        "partnerName": "EzeScan"
+      },
+      {
+        "solutionName": "EzeScan OpenText Capture Solution for Ricoh MFP\u2019s",
+        "partnerName": "EzeScan"
+      }
+    ],
+    "solutionCount": 2
+  },
+  {
+    "partnerName": "ONE ECM SAL",
+    "solutions": [
+      {
+        "solutionName": "Correspondence Management",
+        "partnerName": "ONE ECM SAL"
+      },
+      {
+        "solutionName": "Secure Monitoring \u0026 Notification",
+        "partnerName": "ONE ECM SAL"
+      }
+    ],
+    "solutionCount": 2
+  },
+  {
+    "partnerName": "Unisys Nederland N.V.",
+    "solutions": [
+      {
+        "solutionName": "Unisys DMConnect for eDOCS",
+        "partnerName": "Unisys Nederland N.V."
+      },
+      {
+        "solutionName": "Unisys Generic Rule Service for eDOCS",
+        "partnerName": "Unisys Nederland N.V."
+      }
+    ],
+    "solutionCount": 2
+  },
+  {
+    "partnerName": "Axiom Services, Inc",
+    "solutions": [
+      {
+        "solutionName": "LinkFixer Advanced",
+        "partnerName": "Axiom Services, Inc"
+      }
+    ],
+    "solutionCount": 1
+  },
+  {
+    "partnerName": "BDM S.r.l",
+    "solutions": [
+      {
+        "solutionName": "Supply chain bill of materials digital onboarding",
+        "partnerName": "BDM S.r.l"
+      }
+    ],
+    "solutionCount": 1
+  },
+  {
+    "partnerName": "BTM Software Europe B.V.",
+    "solutions": [
+      {
+        "solutionName": "DRAWbridge Suite",
+        "partnerName": "BTM Software Europe B.V."
+      }
+    ],
+    "solutionCount": 1
+  },
+  {
+    "partnerName": "CI HUB GmbH",
+    "solutions": [
+      {
+        "solutionName": "CI HUB Connector",
+        "partnerName": "CI HUB GmbH"
+      }
+    ],
+    "solutionCount": 1
+  },
+  {
+    "partnerName": "Concerta Consulting Inc.",
+    "solutions": [
+      {
+        "solutionName": "InvoiceConnect",
+        "partnerName": "Concerta Consulting Inc."
+      }
+    ],
+    "solutionCount": 1
+  },
+  {
+    "partnerName": "Contesto AS",
+    "solutions": [
+      {
+        "solutionName": "OpenText\u2122 Extended ECM for Microsoft\u00AE Dynamics 365\u2122 Customer Engagement",
+        "partnerName": "Contesto AS"
+      }
+    ],
+    "solutionCount": 1
+  },
+  {
+    "partnerName": "Deloitte Consulting",
+    "solutions": [
+      {
+        "solutionName": "Automatic Tax Code Determination for Invoices",
+        "partnerName": "Deloitte Consulting \u0026 Advisory BV"
+      }
+    ],
+    "solutionCount": 1
+  },
+  {
+    "partnerName": "Deloitte Consulting \u0026 Advisory BV",
+    "solutions": [
+      {
+        "solutionName": "Automatic Tax Code Determination for Invoices",
+        "partnerName": "Deloitte Consulting \u0026 Advisory BV"
+      }
+    ],
+    "solutionCount": 1
+  },
+  {
+    "partnerName": "DOCBYTE N.V.",
+    "solutions": [
+      {
+        "solutionName": "Case Manager",
+        "partnerName": "DOCBYTE N.V."
+      }
+    ],
+    "solutionCount": 1
+  },
+  {
+    "partnerName": "Element Technologies, LLC",
+    "solutions": [
+      {
+        "solutionName": "Extended Dynamic Views",
+        "partnerName": "Element Technologies, LLC"
+      }
+    ],
+    "solutionCount": 1
+  },
+  {
+    "partnerName": "Entelgy Consulting S. A.",
+    "solutions": [
+      {
+        "solutionName": "eTradeMatrix",
+        "partnerName": "Entelgy Consulting S. A."
+      }
+    ],
+    "solutionCount": 1
+  },
+  {
+    "partnerName": "entplexit GmbH",
+    "solutions": [
+      {
+        "solutionName": "OpenText CLM integration with SAP Business ByDesign",
+        "partnerName": "entplexit GmbH"
+      }
+    ],
+    "solutionCount": 1
+  },
+  {
+    "partnerName": "fme AG",
+    "solutions": [
+      {
+        "solutionName": "migration-center",
+        "partnerName": "fme AG"
+      }
+    ],
+    "solutionCount": 1
+  },
+  {
+    "partnerName": "General Networks Corp",
+    "solutions": [
+      {
+        "solutionName": "Enhanced Attributes for Content Server",
+        "partnerName": "General Networks Corp"
+      }
+    ],
+    "solutionCount": 1
+  },
+  {
+    "partnerName": "Ideagen Technology Limited",
+    "solutions": [
+      {
+        "solutionName": "PleaseReview",
+        "partnerName": "Ideagen Technology Limited"
+      }
+    ],
+    "solutionCount": 1
+  },
+  {
+    "partnerName": "Image Access Corp.",
+    "solutions": [
+      {
+        "solutionName": "OpenText Web Capture for Capture Center by Image_Access",
+        "partnerName": "Image Access Corp."
+      }
+    ],
+    "solutionCount": 1
+  },
+  {
+    "partnerName": "Lynx S.p.A.",
+    "solutions": [
+      {
+        "solutionName": "Smart Onboarding for Utilities\u0026Telco",
+        "partnerName": "Lynx S.p.A."
+      }
+    ],
+    "solutionCount": 1
+  },
+  {
+    "partnerName": "Mobile Helix, Inc.",
+    "solutions": [
+      {
+        "solutionName": "LINK Encrypted App",
+        "partnerName": "Mobile Helix, Inc."
+      }
+    ],
+    "solutionCount": 1
+  },
+  {
+    "partnerName": "Qellus, LLC",
+    "solutions": [
+      {
+        "solutionName": "Extended ECM for IBM Maximo by Qellus",
+        "partnerName": "Qellus, LLC"
+      }
+    ],
+    "solutionCount": 1
+  },
+  {
+    "partnerName": "Ravenblack Technical Services Inc.",
+    "solutions": [
+      {
+        "solutionName": "Productivity Suite for Content Intelligence (WebReports)",
+        "partnerName": "Ravenblack Technical Services Inc."
+      }
+    ],
+    "solutionCount": 1
+  },
+  {
+    "partnerName": "Reva Solutions",
+    "solutions": [
+      {
+        "solutionName": "ServiceNow Connector for OpenText Extended ECM",
+        "partnerName": "REVA SOLUTIONS"
+      }
+    ],
+    "solutionCount": 1
+  },
+  {
+    "partnerName": "Reveille Software",
+    "solutions": [
+      {
+        "solutionName": "OpenText Content Security and Performance by Reveille",
+        "partnerName": "Reveille Software"
+      }
+    ],
+    "solutionCount": 1
+  },
+  {
+    "partnerName": "Ro-Planet S.R.L.",
+    "solutions": [
+      {
+        "solutionName": "xCMS - Correspondence Management",
+        "partnerName": "Ro-Planet S.R.L."
+      }
+    ],
+    "solutionCount": 1
+  },
+  {
+    "partnerName": "Spotline, Inc",
+    "solutions": [
+      {
+        "solutionName": "VIM Bots : Chatbots for VIM and SAP",
+        "partnerName": "Spotline, Inc"
+      }
+    ],
+    "solutionCount": 1
+  },
+  {
+    "partnerName": "SYNAPPS SOLUTIONS LTD",
+    "solutions": [
+      {
+        "solutionName": "Vendor Neutral Archive",
+        "partnerName": "SYNAPPS SOLUTIONS LTD"
+      }
+    ],
+    "solutionCount": 1
+  },
+  {
+    "partnerName": "tcf. BV",
+    "solutions": [
+      {
+        "solutionName": "The Document Wizard",
+        "partnerName": "tcf. BV"
+      }
+    ],
+    "solutionCount": 1
+  },
+  {
+    "partnerName": "Turnpikes Aps",
+    "solutions": [
+      {
+        "solutionName": "Insights \u0026 Analytics for VIM",
+        "partnerName": "Turnpikes Aps"
+      }
+    ],
+    "solutionCount": 1
+  },
+  {
+    "partnerName": "vdR Group, Inc (The)",
+    "solutions": [
+      {
+        "solutionName": "Extended ECM for PLM",
+        "partnerName": "vdR Group, Inc (The)"
+      }
+    ],
+    "solutionCount": 1
+  },
+  {
+    "partnerName": "Xerox Emirates LLC",
+    "solutions": [
+      {
+        "solutionName": "TRASUL - Correspondence Management System",
+        "partnerName": "Xerox Emirates LLC"
+      }
+    ],
+    "solutionCount": 1
+  },
+  {
+    "partnerName": "(PIS) Poslovno Informacioni Sistemi srl.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "]init[ AG f\u00FCr digitale Kommunikation",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "4N6 SRL",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "9152-2458 Quebec Inc.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "A. Kowalenko \u0026 Associates, Inc.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "A. Th. Loizou \u0026 Son Ltd",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Ablaze Information Technology Co. Ltd",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Accenture LLP",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Accenture, S.L. Sociedad Unipersonal",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "ADBANSYS, S.A. DE C.V.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "addIT Dienstleistungen GmbH \u0026 Co KG",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "AdeA (Administradora de Archivos, S.A.)",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Adesso Orange AG",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Adlib Publishing Systems, Inc",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "ADNATE IT SOLUTIONS Private Limited",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Adrenalina Consulting Sp. z o.o. Sp.k.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Advantage Technologies Inc.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Advenit AS",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "aenia international GmbH \u0026 Co KG",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "AEROW ECM WORLD Ltd",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Aiimi Limited",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Ajila AG",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Akademika d.o.o.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Aktive Reply SRL",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Al Moammar Information Systems Co.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Alamo City Engineering Services",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Alcom System AB",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "ALITEK",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "AmeXio Netherlands BV",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "AmeXio SAS",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "AmeXio Switzerland SA",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "APPLEWHITE, Ingenier\u00EDa de Comunicaciones S.A.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Applium",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "AppTier, LLC",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "APTIVA TECHNOLOGIES FZE",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Aptus Legal Systems",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "AQ Solutions Kft.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "ARBES TECHNOLOGIES, a.s.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Arina AG",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Armedia, LLC",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Arrow ECS Canada Limited",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Arrow Electronics, Inc.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "ASEE Solutions d.o.o. Beograd",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Ashraf \u0026 Company Limited",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "ASSET GULF FZ-L.L.C.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Astral Consulting Services Pty Ltd",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Atea Sverige AB",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Atlantica Digital S.p.A.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "ATOS (Australia) Pty Ltd",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "ATOS FRANCE",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "ATOS Information Technology (Singapore) Pte Ltd",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "ATS AUTOMA\u00C7\u00C3O TECNOLOGIA E SERVI\u00C7OS LTDA",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Auritas LLC",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Automated Financial Systems (AFS)",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "AUTOMATED SYSTEMS (HK) LIMITED",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "AVELON",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Avvale Espa\u00F1a S.L.U.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Avvale SAS",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Avvale SpA",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Axians IT Services Poland sp. z o.o.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Axient Pty Ltd",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "AXXEDO AG",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Axyon Consulting",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "B.K.L.-isos GmbH",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Balboa Peaks Software",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Banqsoft AS",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Baraka IT Solutions (Pty) Ltd",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Bart \u0026 Associates, LLC",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "BASS FOR PROGRAMMING COMPANY",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "BCSolutions",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "BCSOLUTIONS SARL",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "BCTS CONSULTING S.A.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Bighand Ltd",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Bilbomatica SA",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Bizmod Consulting (Pty) Ltd",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "BizNTech Consulting Co. Ltd.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Blue Car Technologies",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "BLUE STREAK TECHNOLOGIES",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Blue Turtle Technologies (Pty) Ltd",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Booz Allen Hamilton Inc.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Bounce Back Technologies L.L.C.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Bounga Informatics Pte Ltd",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "BPS VENTURES II, LLC",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "BTS Strategic Consulting Pty Ltd",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Business Software Consulting",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Cadac Group Holding B.V.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Cadence Solutions",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Canon Marketing Japan Inc.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Canon U.S.A., Inc.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Capgemini America, Inc.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Carahsoft Technology Corp",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Carve Consulting P/S",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Carve Solutions ApS",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "CASO Document Management, Inc.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Caspian Innovation Center LLC",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "CBIT Digital Forensics Services (CDFS)",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "ccelera srl",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Celebrus Technologies PLC",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "CER Software S.A.C.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "CGI",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "CGI SUOMI OY",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "CHINA DRAGON IT LIMITED",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Chrome Consulting Pty Ltd",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "CIM ECM ENGINEERING S.L.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "CLARITY LIMITED",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Clear Info",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "ClearCadence LLC",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Climb Channel Solutions Inc.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "CM Consulting SARL",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Coasin Costa Rica S.A",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "COEXYA SAS",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Coforge Limited",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Cometa S.p.A.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Commvault Systems Inc",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "CompuSmart Systems s.a.l. Offshore",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Computer Machine Consulting Development S/C Ltda.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Conet Business Consultants GmbH",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Consultoria y Aplicaciones Avanzadas de ECM SA de CV",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "CONVOTIS Freiburg AG",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Coretech Knowledge, Inc.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Cornerstone Performance Management",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Cortex Vertical, Inc.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Counterpoint Consulting, Inc.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Cozumevi Consulting",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Createlcom Co., Ltd",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "CTI Consulting GmbH",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "CUSTOM MADE INVESTIGATION TECHNOLOGY SOLUTIONS (Pty)",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "CV Bounga Solusi Informatika",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Cws SRL",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Dark Horse Digital Solutions Private Limited",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "DataCentrix (Pty) Ltd.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "DATACENTRIX SOLUTIONS LLC",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Datacom Systems Pty Ltd",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "DataExpert B.V.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "DATAFINITY",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Datamatics Global Services Ltd",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "DATAVENIR Logiciels",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "DATI Group, Llc",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "dbi services",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "DDI Teknoloji ve Bilisim \u00C7\u00F6z\u00FCmleri Ar\u0026Ge Hizmetleri Ltd.Sti.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "delaware",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Delaware Consulting Asia Pacific Pte Ltd",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Delaware Consulting SAS",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Deloitte Consulting GmbH",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Deloitte Inc.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "DEVERYWARE",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "DI Durban Informatik GmbH",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "DICKER DATA LIMITED",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Digination",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Digital Intelligence Inc",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "DIGITOFORENSE SPA",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "DNS a.s.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Doctra GmbH",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Doctricks AB",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Documation Software Ltd",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "DSA Polska",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Duck Creek Technologies LLC",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "E-Paper Solutions, S.A. de C.V.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "ECM Tek, LLC",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "ECMsolutions dba. Metastore Nederland BV.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Ecodocx LLC",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Edita Prima Oy",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "EFS e-Forensic Services Inc.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "EIM d.o.o.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "EIM International",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "EKASYS Inc",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "elbformat content solutions GmbH",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "ELCA INFORMATIQUE SA",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Electric Paper Informationssysteme GmbH",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "ELIGENS SRL",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "EMI Solutions Sdn Bhd",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Eminence Business Holdings",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "EMT CYBER Technology Inc.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Engineering Ingegneria Informatica S.P.A.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "ENIT AB",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "ENIT Denmark ApS",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Entelgy Consultores S.A.S.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Enterprise Information Xperts LLC dba EIX Global",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Enthink",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "EOH Mthombo (Pty) Limited",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Epikso India Private Limited",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "EPOCH CONCEPTS LLC",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "ERIS Solutions",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Espire Infolabs (Singapore) Pte. Ltd.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Estudio de Informatica Forense de Gustavo Presman",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Exknow GmbH",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Exprivia S.p.A",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "FADEL Partners Inc",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "FARANANI DOCTEC (PTY) LTD",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Fastman Pty Ltd",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "FINATECH GROUP S.A.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Finedoc Consulting",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Fink IT-Solutions GmbH \u0026 Co KG",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Flatirons Digital Innovations Inc.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Flexso",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "FME US LLC",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Forcont Business Technology GmbH",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "FOREFRONT TECHNOLOGIES",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Forensic Computers Inc.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "ForensicCorp Ltda",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Formica NV",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Foundation Futuristic Technologies Pvt. Ltd",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "FOXIT SOFTWARE COMPANY",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Friends Color Images Private Limited",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Fujifilm Business Innovation (Thailand) Co., Ltd.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "FUJIFILM Business Innovation Corp.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Fujitsu Finland Oy",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Fulcrum Management Pty Ltd",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Future Standards EOOD",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "G2IT, LLC",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "GDOC Espa\u00F1a SL",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "GETRONICS",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "GFT Italia S.r.l.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Glemser Technologies Corporation",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "GMDSOFT Inc.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Golden High Solutions Limited",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Greensboro Telecom Ltd",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Group ITmind",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Hammock Corporation",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Harmony Documisation BV",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Hayes Information Systems and Communications Pty Ltd T/As Atturra Enterprise Content Management",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "HCL America Inc.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Helix International",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Help Print Solutions SL",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Henchman BV",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "HORSA RUN S.R.L.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "HPT VIETNAM CORP",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "HTCI EDAS FOX",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Hugh Ferguson Consulting",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "I AM Consulting Co., Ltd.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "I-D Media GmbH",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "I.CON. S.R.L.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "I.R.I.S. Nederland BV",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Ichor Solutions",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "ICZ.Services a.s.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Idare SA de CV",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "iHorizons Media and Information Services W.L.L.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "IMAGE NETWORK CORPORATION",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "ImageFast Ltd",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Imagen S.A.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "ImageWare AG",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "ImagineRight IT Global Services S.L.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "IMDS CANADA INC.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Imexperts do Brasil Consultoria e Gest\u00E3o de Informa\u00E7\u00E3o Ltda",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "IMTEXH SDN. BHD.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "INCIDENT RESPONSE TEAM S.A. DE C.V.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "INCONSULT GmbH",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Indra Italia SPA",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Indra Sistemas SA",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "INETUM ESPA\u00D1A, S.A",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "InfiniSolution Co.,Ltd.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Infobuilder Technologies",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Infoconnect Sdn Bhd",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Infopulse Ukraine LLC",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Informa Software",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Information First, Inc.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Informed Consulting B.V.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Infort Egypt",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Infoshare Solutions AS",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Infospire LLC",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Infosquare BV",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Infosys Limited",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "INGRAM MICRO d.o.o.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "innov@-doc S.r.l.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "inovoo GmbH",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Inpute Technologies Ltd",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "INSEC Security",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Insectra Technology Services",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "INsig2 d.o.o.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Insight",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Inspire Innovations LLC",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Integraltech Networks LLC",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Intelligent Content Solutions LLC",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Intent S.p.A.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Intentive GmbH",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Intercom Enterprises",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "INTERCOMMERCE NETWORK SERVICES, INC.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Intercomputer Global Services",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Internet Solutions S.A.S.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Interop latinoamerica sa",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "intlx Solutions, LLC",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "iOCO Technology South Africa (PTY) Ltd",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "IOCOM SAS",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "IQ Business Group",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "IQ Business Group, Inc.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "IseoSolutions AG",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "ISEOSOLUTIONS ASIA LTD",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "IT Pro Service Co., Ltd.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "IT Solutions",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "IXTENT s.r.o.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "IXTENT Slovakia s.r.o.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Izmo Ltd",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "J.S. ONE SDN. BHD.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "JA:Apps Software GmbH",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "JETCO Technology Inc.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Jiangsu Xinrui Yixin Technology Co Ltd",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "JOYOU DATA TECHNOLOGY LTD",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Kanematsu Electronics Ltd.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Kets Bilgisayar Ltd.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "KITS CO., LTD.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "kki FirstClass Deutschland eK",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Klish Group Inc",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Knowit  AB",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Knowledgeplaza Professional Services B.V.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "KnowledgeWorks Enterprise Content Management Solutions Canada Inc",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Konica Minolta Business Solutions (UK) Limited",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Konica Minolta Business Solutions Australia Pty Ltd",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Konica Minolta Business Solutions U.S.A., Inc",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Konvergenz Network Solutions Limited",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "KPS Transformation GmbH",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Kreative Technologies, LLC",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "kwe.li Gmbh",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Levi, Ray \u0026 Shoup, Inc.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Link Nordic AS",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Linkpower Technology Co. Ltd",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Linling software technology (Shanghai) Co., Ltd",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "LiveWire Technologies Inc",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "lngenieros Especialistas en Soluciones de Sistemas lnformaticos y a la Medida Santiago",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "LOBRA s.r.l",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Locus Systems Inc",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "LORENZ Bridge Software GmbH",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Lukardi S.A.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "LURICA CORP ARGENTINA S.A.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Macrosoft, Inc.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Mannai Trading Company WLL",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Materna Information \u0026 Communications SE",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Matrix Invent MSC Sdn Bhd",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "MD Consulting \u0026 Informationsdienste GmbH",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Merito Solutions, Inc.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "MetaSource LLC",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "mh Service GmbH",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "MHC Hardware \u0026 Software Trading LLC",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Microsoft",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Mind2Biz Bilisim Teknolojileri",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Moonsoft Oy",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "MTM Technologies (ATSG)",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Muraai Information Technologies Pvt Ltd",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "N-iX Delivery",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Nanavati Consulting Inc",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "NESS A.T. LTD.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Nexlogica LLC",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Nibana Solutions Pvt. Ltd.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "NIKOYO (HK) LIMITED",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Nineonesoft Co., Ltd.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "NIPPON COMPUTER SYSTEMS CORPORATION",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Nokavision Software BV",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Northern-Lights GmbH",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "NTT (Thailand) Limited",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "NTT Data",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "NTT DATA Business Solutions AG",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "NTT DATA Business Solutions Kft.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "NTT DATA ITALIA SPA",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Office Productivity Solution Pte Ltd.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Olidata S.p.A.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Ondata International SL",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "OPEXUS",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Optiform Inc",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Organizaci\u00F3n de Tecn\u00F3logos y Asociados en Consultor\u00EDa, OTAC S.C.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Oy Websmart Ab",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Oyster Information Management Solutions Limited",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "PACE Business Solutions",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "PAPERFREE CORPORATION",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "PBS Technologies (Trinidad) Limited",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Pearl Sverige AB",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Peer Integration Partners, LLC",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "PENTA SYSTEM TECHNOLOGY, INC.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Performance Technologies S.A.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "PGITR Bilisim Hizmetleri A.S.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Piemme Telecom SRL",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Pinuts digital thinking GmbH",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "pit-cup GmbH",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "PortalNet Co.,Ltd.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Power Imaging",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Precision Business Technologies (PBT)",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Preolas Pty Ltd",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Pro Inside Public Company Limited",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Proceed Data Management Limited",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Procentrica CC",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Process Fusion, Inc.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "ProjectVault s r l",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Prosoft Information Systems",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Protinus IT BV",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Protiviti",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Provision Software Division S.R.L.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Proximus NXT IT NV SA",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "PT Astra Graphia TBK",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "PT Mastersystem Infotama",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "PT Reycom Document Solusi",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "PT. Calpadia Sistem Integrasi",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "QBS Software Ltd",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "QPC Holdings Limited",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "QPES AG",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "QualityNet Co.,Ltd.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "QUEST IT SERVICES SRL",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Qvest.US, LLC",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "R1 S.P.A.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Rapid Deployment Solutions LLC",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "RAYA INTEGRATION",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Redcom, Inc.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Representaciones Robinson 2000 SAC",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "ReVisionz Inc.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Richfit International FZ-LLC",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Ricoh Hong Kong Ltd",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Ricoh USA, Inc.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Risetime Inc.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Risk Analysis Consultants",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "S.A.T. Trading LLC",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Sabris Consulting s.r.o.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Sarake Oy",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "SARL SG SOFTWARE",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Satelite.com S.A.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "SCC EDV-Beratung Aktiengesellschaft",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Scheer IDS",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "SCL Consulting",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Sedin Technologies Pvt Ltd",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "SEIDOR Opentrends S.L.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Semantise",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Shanghai Zonysoft Co Ltd",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Sherpas Group AB",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Sigma Business Solutions",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "SIGMA EQT Servei SL",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Sigma-IT S.de R.L de C.V",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Silicon Forensics Inc.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Simac Document Solutions BV",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "SISAP",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "SITS Deutschland GmbH",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "SkyGate internetworking GmbH",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "SL Information Solutions Sdn Bhd",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "SOA Professionals Peru S.A.C.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "SoftwareONE AG",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "SoftwareOne Netherlands BV",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Sojitz Tech-Innovation Co., Ltd.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "SoluSoft Inc",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Spell GmbH",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Speto \u0026 Brait Consulting Group SL",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "spheos GmbH",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Stellar Services",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "STELLARIS TECHNOLOGIES PRIVATE LIMITED",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Stratesys Technology Solutions, S.A. de C.V.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Stratesys Tecnologias Da Informacao Eireli",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "STREAM MANAGEMENT",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Sumuri LLC",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Supai Infotech India Private Ltd",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Swan Solutions LLC",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Swedwise AB",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "SwiftX Solutions Pte Ltd",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "SyncTrue Inc",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Tamachi Ltda",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Tangunsoft",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "TCS",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Team Netuse S.r.l.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Tec Infosystems LLP",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Tech Data Advanced Solutions (Vietnam) Company Limited",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Tech Mahindra Americas Inc.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Tech Mahindra Limited",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Tech Mahindra Tenzing",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "TechBiz Forense Digital",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Technoval Information Systems Co. LTD",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Technoval Information Systems Co. Ltd. (UAE)",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "TechOrbit Solutions Private Limited",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Techtonics Group Limited",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "TEKA SYSTEMS BUSINESS SOLUTIONS SINGLE MEMBER SA",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Teknei",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Telemikro Telecomunicacoes, Informatica e Microeletronica LTDA.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Tenth Generation Technology Systems Limited Company",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Terra Information Group, Inc.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Terralink Technologies LLC",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "TerraLink Technologies MENA DMCC",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "TerraLink Technologies USA, Inc",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "TESSI. S.A.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "TheFormsAgency Pty Limited",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "ThoughtStorm Incorporated (Inc)",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "TietoEVRY",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Tietoevry AB",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Tietoevry Denmark A/S",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "TietoEVRY Norway AS",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "TIMESTAMP, S.L",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "TIW Group Limited",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Trask Solutions  A.S.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Tri-I Biotech (Shanghai), Ltd",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Tribia AS",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "TRUST-SYSTEMS CONSULTING SARL",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "T\u00DCV TRUST IT T\u00DCV AUSTRIA GMBH",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "UAB \\u201cProit\\u201d",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Unisys Deutschland GmbH",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "UniSystems S.A.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "UNIVERSAL BUSINESS TECHNOLOGIES CORPORATION",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "ValueMomentum Inc",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "VAMOS ECM GmbH",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "VASS Consultor\u00EDa de Sistemas SLU",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Vietnam Cyberspace Security Technology, JSC",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "VILT Iberica",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "VILT Portugal",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "VILT Spain",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "VILT Switzerland AG",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Visionary Integration Professionals, LLC",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Vizdom Software, Inc.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Vox Telecommunications Pty Ltd",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Wenxin Software Technology (Guangzhou) Co Ltd",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Wipro Ltd",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Wisteria Information Technologies, LLC",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Work Dynamics Technologies Inc",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "X-Center Benelux B.V.",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Xentrax Inc",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Xillio BV",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "XPER Consulting AS",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "XStreamReports Inc",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Xybion Technology Solutions, Inc",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Y1 Digital AG",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "YongPeng Solutions Sdn Bhd",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Your Ideas Limited",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "Zarion",
+    "solutions": [],
+    "solutionCount": 0
+  },
+  {
+    "partnerName": "ZPC Group s.r.o.",
+    "solutions": [],
+    "solutionCount": 0
+  }
+]
