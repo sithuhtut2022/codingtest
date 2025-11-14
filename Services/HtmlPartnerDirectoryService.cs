@@ -48,6 +48,34 @@ namespace OpenTextPartnerScraper.Services
                 Console.WriteLine($"   👥 Total partners: {partnersData.Count}");
                 Console.WriteLine($"   🔗 Partners with solutions: {partnersData.Count(p => p.SolutionCount > 0)}");
                 Console.WriteLine($"   💡 Total solutions: {partnersData.Sum(p => p.SolutionCount)}");
+                
+                // Open HTML file in default browser
+                try
+                {
+                    Console.WriteLine();
+                    Console.ForegroundColor = ConsoleColor.Cyan;
+                    Console.WriteLine("🌐 Opening Partner Directory in your default browser...");
+                    Console.ResetColor();
+                    
+                    var absolutePath = Path.GetFullPath(htmlPath);
+                    var startInfo = new System.Diagnostics.ProcessStartInfo
+                    {
+                        FileName = absolutePath,
+                        UseShellExecute = true
+                    };
+                    System.Diagnostics.Process.Start(startInfo);
+                    
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine("✅ Browser opened successfully!");
+                    Console.ResetColor();
+                }
+                catch (Exception browserEx)
+                {
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    Console.WriteLine($"⚠️  Could not auto-open browser: {browserEx.Message}");
+                    Console.WriteLine($"📂 Please manually open: {Path.GetFullPath(htmlPath)}");
+                    Console.ResetColor();
+                }
             }
             catch (Exception ex)
             {
@@ -64,23 +92,59 @@ namespace OpenTextPartnerScraper.Services
                 var primaryPath = Path.Combine("output", "partners_with_solutions.json");
                 var samplePath = Path.Combine("output", "sample", "partners_with_solutions.json");
 
-                string jsonContent;
+                string jsonContent = null;
+                bool usingSampleData = false;
+                
                 if (File.Exists(primaryPath))
                 {
                     _logger.LogInformation($"📁 Loading partners data from: {primaryPath}");
                     Console.WriteLine($"📁 Loading partners data from: partners_with_solutions.json");
-                    jsonContent = await File.ReadAllTextAsync(primaryPath);
+                    
+                    var content = await File.ReadAllTextAsync(primaryPath);
+                    
+                    // Check if the content is valid and not empty
+                    if (!string.IsNullOrWhiteSpace(content) && content.Trim() != "[]")
+                    {
+                        var testData = JsonSerializer.Deserialize<List<PartnerWithSolutions>>(content);
+                        if (testData != null && testData.Count > 0)
+                        {
+                            jsonContent = content;
+                        }
+                        else
+                        {
+                            Console.ForegroundColor = ConsoleColor.Yellow;
+                            Console.WriteLine("⚠️  Main partners_with_solutions.json file is empty or contains no valid data");
+                            Console.WriteLine("📄 Falling back to sample data...");
+                            Console.ResetColor();
+                        }
+                    }
+                    else
+                    {
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+                        Console.WriteLine("⚠️  Main partners_with_solutions.json file is empty");
+                        Console.WriteLine("📄 Falling back to sample data...");
+                        Console.ResetColor();
+                    }
                 }
-                else if (File.Exists(samplePath))
+                
+                // If main file doesn't work, try sample
+                if (jsonContent == null && File.Exists(samplePath))
                 {
                     _logger.LogInformation($"📁 Loading partners data from sample: {samplePath}");
                     Console.WriteLine($"📁 Loading partners data from sample: sample\\partners_with_solutions.json");
                     jsonContent = await File.ReadAllTextAsync(samplePath);
+                    usingSampleData = true;
                 }
-                else
+                
+                if (jsonContent == null)
                 {
-                    _logger.LogError("No partners_with_solutions.json file found in output or output/sample directories");
-                    Console.WriteLine("❌ No partners_with_solutions.json file found in output or sample directories");
+                    _logger.LogError("No valid partners_with_solutions.json file found");
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("❌ No valid partners_with_solutions.json file found!");
+                    Console.ResetColor();
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    Console.WriteLine("🔄 Please run Choice 3 (OpenText Scraper) first to generate the data");
+                    Console.ResetColor();
                     return new List<PartnerWithSolutions>();
                 }
 
@@ -90,6 +154,14 @@ namespace OpenTextPartnerScraper.Services
                 };
                 var partners = JsonSerializer.Deserialize<List<PartnerWithSolutions>>(jsonContent, jsonOptions) ?? new List<PartnerWithSolutions>();
                 _logger.LogInformation($"📊 Loaded {partners.Count} partners from JSON file");
+                
+                // Show user feedback about data source
+                if (usingSampleData)
+                {
+                    Console.ForegroundColor = ConsoleColor.Cyan;
+                    Console.WriteLine("ℹ️  Note: Using sample data. For fresh data, run Choice 3 (OpenText Scraper)");
+                    Console.ResetColor();
+                }
                 
                 return partners;
             }

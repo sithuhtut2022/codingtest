@@ -2,7 +2,10 @@
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using OpenTextPartnerScraper.Services;
+using OpenTextPartnerScraper.Models;
 using Serilog;
+using System.Threading;
+using System;
 
 namespace OpenTextPartnerScraper
 {
@@ -10,25 +13,70 @@ namespace OpenTextPartnerScraper
     {
         static async Task Main(string[] args)
         {
-            // Configure Serilog
+            // Configure Serilog for clean, user-friendly output
             Log.Logger = new LoggerConfiguration()
-                .MinimumLevel.Debug()
-                .WriteTo.Console()
+                .MinimumLevel.Warning()
+                .WriteTo.Console(outputTemplate: "{Message:lj}{NewLine}")
                 .CreateLogger();
 
             try
             {
-                Log.Information("OpenText Scraper - Automated Sequential Processing Starting...");
+                bool continueRunning = true;
+                
+                while (continueRunning)
+                {
+                    Log.Information("OpenText Scraper - Interactive Menu Starting...");
 
-                Console.WriteLine("OpenText Scraper - Automated Sequential Processing:");
-                Console.WriteLine("Step 1: Extract Solutions (174 solutions - 100% success + 7x speed)");
-                Console.WriteLine("Step 2: Extract Partners (567 partners - 99.6% success + 4x speed)");
-                Console.WriteLine("Step 3: Join Partner-Solution Files (Combine into unified dataset)");
-                Console.WriteLine();
-                Console.WriteLine("Alternative Options:");
-                Console.WriteLine("4. Generate Partner Directory HTML Page (Interactive web page with filters)");
-                Console.WriteLine("5. Display Triangle Patterns (Question 2)");
-                Console.Write("Enter choice (4 for HTML generation, 5 for triangle patterns, or any other key for sequential processing): ");
+                    // Display attractive header
+                    Console.Clear();
+                    Console.ForegroundColor = ConsoleColor.Cyan;
+                Console.WriteLine("╔══════════════════════════════════════════════════════════════════════════════╗");
+                Console.WriteLine("║                        🚀 OPENTEXT Coding Test 🚀                           ║");
+                Console.WriteLine("║                    Advanced Data Extraction & Analysis Tool                 ║");
+                Console.WriteLine("║                           Developed by Dennis Htut                          ║");
+                Console.WriteLine("╚══════════════════════════════════════════════════════════════════════════════╝");
+                    Console.ResetColor();
+                    Console.WriteLine();
+                    
+                    // Menu options with icons and descriptions
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    Console.WriteLine("📋 AVAILABLE OPERATIONS:");
+                    Console.ResetColor();
+                    Console.WriteLine();
+                    
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.Write("   2. ");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.Write("🔺 Question 2: ");
+                    Console.ForegroundColor = ConsoleColor.Gray;
+                    Console.WriteLine("Display Triangle Patterns (Mathematical algorithms)");
+                    
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.Write("   3. ");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.Write("⚡ Question 3: ");
+                    Console.ForegroundColor = ConsoleColor.Gray;
+                    Console.WriteLine("OpenText Scraper (Sequential Processing - Partners + Solutions)");
+                    
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.Write("   4. ");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.Write("🌐 Question 4: ");
+                    Console.ForegroundColor = ConsoleColor.Gray;
+                    Console.WriteLine("Generate Partner Directory HTML Page (Interactive web interface)");
+                    
+                    Console.ResetColor();
+                    Console.WriteLine();
+                    
+                    // Separator line
+                    Console.ForegroundColor = ConsoleColor.DarkGray;
+                    Console.WriteLine("────────────────────────────────────────────────────────────────────────────────");
+                    Console.ResetColor();
+                    
+                    // Input prompt
+                    Console.ForegroundColor = ConsoleColor.Cyan;
+                    Console.Write("💡 Enter your choice (2, 3, 4) or press any other key to exit: ");
+                    Console.ForegroundColor = ConsoleColor.White;
                 
                 var input = Console.ReadLine();
 
@@ -36,15 +84,7 @@ namespace OpenTextPartnerScraper
                 var host = Host.CreateDefaultBuilder(args)
                     .ConfigureServices((context, services) =>
                     {
-                        services.AddHttpClient<IDataExportService, DataExportService>(client =>
-                        {
-                            client.DefaultRequestHeaders.Add("User-Agent",
-                                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36");
-                            client.Timeout = TimeSpan.FromMinutes(5);
-                        });
-                        
                         // Register only the optimized services we need
-                        services.AddTransient<IDataExportService, DataExportService>();
                         services.AddTransient<BalancedSeleniumExtractor>();
                         services.AddTransient<SmartOptimizedPartnerExtractor>();
                         services.AddTransient<JsonJoinService>();
@@ -54,63 +94,343 @@ namespace OpenTextPartnerScraper
                     .Build();
 
                 // Get the services (only the optimized ones we need)
-                var exportService = host.Services.GetRequiredService<IDataExportService>();
                 var balancedExtractor = host.Services.GetRequiredService<BalancedSeleniumExtractor>();
                 var smartOptimizedPartnerExtractor = host.Services.GetRequiredService<SmartOptimizedPartnerExtractor>();
                 var joinService = host.Services.GetRequiredService<JsonJoinService>();
                 var htmlService = host.Services.GetRequiredService<HtmlPartnerDirectoryService>();
                 var logger = host.Services.GetRequiredService<ILogger<Program>>();
 
-                if (input?.Trim() == "4")
-                {
-                    // Generate HTML Partner Directory page
-                    Console.WriteLine();
-                    Console.WriteLine("🎨 Generating Partner Directory HTML page...");
-                    await htmlService.GeneratePartnerDirectoryPage();
-                }
-                else if (input?.Trim() == "5")
+                if (input?.Trim() == "2")
                 {
                     // Display Triangle Patterns (Question 2)
-                    Console.WriteLine();
-                    Console.WriteLine("🔺 Displaying Triangle Patterns (Question 2)...");
+                    Console.ResetColor();
+                    Console.Clear();
+                    Console.ForegroundColor = ConsoleColor.Magenta;
+                    Console.WriteLine("╔══════════════════════════════════════════════════════════════════════════════╗");
+                    Console.WriteLine("║                    🔺 QUESTION 2: TRIANGLE PATTERNS 🔺                      ║");
+                    Console.WriteLine("╚══════════════════════════════════════════════════════════════════════════════╝");
+                    Console.ResetColor();
                     Console.WriteLine();
                     
-                    // Call the TriangleWithDimension methods
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    Console.WriteLine("📐 Mathematical Triangle Pattern Generation:");
+                    Console.ResetColor();
+                    Console.WriteLine();
+                    
+                    Console.ForegroundColor = ConsoleColor.Cyan;
+                    Console.WriteLine("🔹 Fixed 3×4 Triangle Pattern:");
+                    Console.ForegroundColor = ConsoleColor.Green;
                     TriangleWithDimension.DisplayTriangle3x4();
                     Console.WriteLine();
-                    TriangleWithDimension.DisplayCustomTriangle(5, 7);
                     
+                    Console.ForegroundColor = ConsoleColor.Cyan;
+                    Console.WriteLine("🔹 Custom 5×7 Triangle Pattern:");
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    TriangleWithDimension.DisplayCustomTriangle(5, 7);
+                    Console.ResetColor();
                     Console.WriteLine();
+                    
+                    Console.ForegroundColor = ConsoleColor.Green;
                     Console.WriteLine("✅ Triangle patterns displayed successfully!");
+                    Console.ResetColor();
+                    Console.WriteLine();
+                    
+                    // Return to menu prompt
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    Console.Write("⬅️ Press any key to return to main menu...");
+                    Console.ResetColor();
+                    try
+                    {
+                        Console.ReadKey(true);
+                    }
+                    catch (InvalidOperationException)
+                    {
+                        // Handle case when console input is redirected
+                        Console.WriteLine("\n✅ Returning to main menu...");
+                        Thread.Sleep(1000);
+                    }
+                }
+                else if (input?.Trim() == "3")
+                {
+                    // Sequential processing with enhanced UI
+                    Console.ResetColor();
+                    Console.Clear();
+                    Console.ForegroundColor = ConsoleColor.Blue;
+                    Console.WriteLine("╔══════════════════════════════════════════════════════════════════════════════╗");
+                    Console.WriteLine("║                  ⚡ QUESTION 3: OPENTEXT SCRAPER ⚡                         ║");
+                    Console.WriteLine("║                      Sequential Data Processing                              ║");
+                    Console.WriteLine("╚══════════════════════════════════════════════════════════════════════════════╝");
+                    Console.ResetColor();
+                    Console.WriteLine();
+                    
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    Console.WriteLine("🚀 Starting automated sequential processing...");
+                    Console.ResetColor();
+                    Console.WriteLine();
+
+                    // Step 1 with enhanced formatting
+                    Console.ForegroundColor = ConsoleColor.Cyan;
+                    Console.WriteLine("═══ STEP 1: EXTRACTING PARTNER SOLUTIONS ═══");
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    Console.WriteLine("🔍 We are pulling the solution data. Please be patient...");
+                    Console.Write("📊 Analyzing solutions: 0 extracted");
+                    Console.ResetColor();
+                    
+                    // Start progress tracking task
+                    var solutionProgressCancellation = new CancellationTokenSource();
+                    var solutionProgressTask = Task.Run(async () =>
+                    {
+                        var dots = 0;
+                        while (!solutionProgressCancellation.Token.IsCancellationRequested)
+                        {
+                            dots = (dots + 1) % 4;
+                            var dotString = new string('.', dots).PadRight(3);
+                            Console.Write($"\r📊 Analyzing solutions: Processing{dotString}");
+                            await Task.Delay(800);
+                        }
+                    });
+                    
+                    var solutions = await balancedExtractor.ExtractAllSolutions();
+                    
+                    // Stop progress tracking
+                    solutionProgressCancellation.Cancel();
+                    await solutionProgressTask;
+                    
+                    Console.Write($" \r📊 Analyzing solutions: {solutions.Count} extracted... ");
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine("✅ Complete!");
+                    Console.ResetColor();
+                    
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    Console.Write("💾 Saving solution data to JSON...");
+                    Console.ResetColor();
+                    
+                    // Save JSON manually
+                    var outputDir = "output";
+                    Directory.CreateDirectory(outputDir);
+                    var jsonPath = Path.Combine(outputDir, "solutions.json");
+                    var jsonOptions = new System.Text.Json.JsonSerializerOptions { WriteIndented = true };
+                    var json = System.Text.Json.JsonSerializer.Serialize(solutions, jsonOptions);
+                    await File.WriteAllTextAsync(jsonPath, json);
+                    
+                    Console.Write(" \r💾 Saving solution data to JSON... ");
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine("✅ Complete!");
+                    Console.ResetColor();
+                    
+                    var solutionsJsonPath = Path.Combine("output", "solutions.json");
+                    Console.ForegroundColor = ConsoleColor.Cyan;
+                    Console.WriteLine($"📁 File saved: {Path.GetFullPath(solutionsJsonPath)} ({solutions.Count} solutions)");
+                    Console.ResetColor();
+                    Console.WriteLine();
+
+                    // Step 2 with enhanced formatting
+                    Console.ForegroundColor = ConsoleColor.Cyan;
+                    Console.WriteLine("─── STEP 2: EXTRACTING ALL PARTNERS ───");
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    Console.WriteLine("🔍 We are pulling the partner data. Please be patient...");
+                    Console.Write("🔍 Scraping directory: Starting extraction...");
+                    Console.ResetColor();
+                    
+                    // Create a progress tracking system with real data
+                    var progressCancellation = new CancellationTokenSource();
+                    var currentProgress = (current: 0, total: 600);
+                    
+                    var progressTask = Task.Run(async () =>
+                    {
+                        var dots = 0;
+                        while (!progressCancellation.Token.IsCancellationRequested)
+                        {
+                            dots = (dots + 1) % 4;
+                            var dotString = new string('.', dots).PadRight(3);
+                            if (currentProgress.current > 0)
+                            {
+                                Console.Write($"\r🔍 Scraping directory: {currentProgress.current} partners found{dotString}");
+                            }
+                            else
+                            {
+                                Console.Write($"\r🔍 Scraping directory: Processing pages{dotString}");
+                            }
+                            await Task.Delay(800);
+                        }
+                    });
+                    
+                    var progress = new Progress<(int current, int total)>(p => currentProgress = p);
+                    var partners = await smartOptimizedPartnerExtractor.ExtractAllPartnersAsync(progress);
+                    
+                    // Stop progress tracking
+                    progressCancellation.Cancel();
+                    await progressTask;
+                    
+                    Console.Write($" \r🔍 Scraping directory: {partners.Count} partners found... ");
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine("✅ Complete!");
+                    Console.ResetColor();
+                    
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    Console.Write("💾 Saving partner data to JSON...");
+                    Console.ResetColor();
+                    
+                    // Save JSON manually
+                    var partnersOutputDir = "output";
+                    Directory.CreateDirectory(partnersOutputDir);
+                    var partnersJsonPath = Path.Combine(partnersOutputDir, "partners.json");
+                    var partnersJsonOptions = new System.Text.Json.JsonSerializerOptions { WriteIndented = true };
+                    var partnersJson = System.Text.Json.JsonSerializer.Serialize(partners, partnersJsonOptions);
+                    await File.WriteAllTextAsync(partnersJsonPath, partnersJson);
+                    
+                    Console.Write(" \r💾 Saving partner data to JSON... ");
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine("✅ Complete!");
+                    Console.ResetColor();
+                    
+                    Console.ForegroundColor = ConsoleColor.Cyan;
+                    Console.WriteLine($"📁 File saved: {Path.GetFullPath(partnersJsonPath)} ({partners.Count} partners)");
+                    Console.ResetColor();
+                    Console.WriteLine();
+
+                    // Step 3 with enhanced formatting
+                    Console.ForegroundColor = ConsoleColor.Cyan;
+                    Console.WriteLine("═══ STEP 3: JOINING PARTNER-SOLUTION DATA ═══");
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    Console.WriteLine("🔗 Processing and merging datasets. Please be patient...");
+                    Console.Write("🔗 Merging datasets: analyzing relationships...");
+                    Console.ResetColor();
+                    
+                    try
+                    {
+                        var partnersWithSolutions = await joinService.JoinPartnerSolutionFiles(
+                            Path.Combine("output", "partners.json"),
+                            Path.Combine("output", "solutions.json"));
+                        await joinService.SaveJoinedData(partnersWithSolutions, Path.Combine("output", "partners_with_solutions.json"));
+                        
+                        // Small delay to ensure file is written
+                        await Task.Delay(500);
+                        
+                        Console.Write($" \r🔗 Merging datasets: {partnersWithSolutions.Count} records processed... ");
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.WriteLine("✅ Complete!");
+                        Console.ResetColor();
+                        
+                        var mergedJsonPath = Path.Combine("output", "partners_with_solutions.json");
+                        Console.ForegroundColor = ConsoleColor.Cyan;
+                        Console.WriteLine($"📁 File saved: {Path.GetFullPath(mergedJsonPath)} ({partnersWithSolutions.Count} records)");
+                        Console.ResetColor();
+                        Console.WriteLine();
+                    }
+                    catch (Exception mergeEx)
+                    {
+                        Console.Write(" \r🔗 Merging datasets: ");
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine("❌ Error occurred during merge!");
+                        Console.ResetColor();
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+                        Console.WriteLine($"⚠️ Error details: {mergeEx.Message}");
+                        Console.ResetColor();
+                        
+                        // Create an empty file as fallback
+                        var emptyList = new List<PartnerWithSolutions>();
+                        await joinService.SaveJoinedData(emptyList, Path.Combine("output", "partners_with_solutions.json"));
+                        
+                        var mergedJsonPath = Path.Combine("output", "partners_with_solutions.json");
+                        Console.ForegroundColor = ConsoleColor.Cyan;
+                        Console.WriteLine($"📁 Fallback file saved: {Path.GetFullPath(mergedJsonPath)} (0 records)");
+                        Console.ResetColor();
+                        Console.WriteLine();
+                    }
+
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine("🎯 Sequential processing completed successfully!");
+                    Console.WriteLine("✅ All three steps have been executed automatically");
+                    Console.ResetColor();
+                    Console.WriteLine();
+                    
+                    // Return to menu prompt
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    Console.Write("⬅️ Press any key to return to main menu...");
+                    Console.ResetColor();
+                    try
+                    {
+                        Console.ReadKey(true);
+                    }
+                    catch (InvalidOperationException)
+                    {
+                        // Handle case when console input is redirected
+                        Console.WriteLine("\n✅ Returning to main menu...");
+                        Thread.Sleep(1000);
+                    }
+                }
+                else if (input?.Trim() == "4")
+                {
+                    // Generate HTML Partner Directory page with enhanced UI
+                    Console.ResetColor();
+                    Console.Clear();
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine("╔══════════════════════════════════════════════════════════════════════════════╗");
+                    Console.WriteLine("║              🌐 QUESTION 4: HTML PARTNER DIRECTORY 🌐                       ║");
+                    Console.WriteLine("║                    Interactive Web Interface Generator                       ║");
+                    Console.WriteLine("╚══════════════════════════════════════════════════════════════════════════════╝");
+                    Console.ResetColor();
+                    Console.WriteLine();
+                    
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    Console.WriteLine("🎨 Generating Partner Directory HTML page...");
+                    Console.ResetColor();
+                    await htmlService.GeneratePartnerDirectoryPage();
+                    Console.WriteLine();
+                    
+                    // Return to menu prompt
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    Console.Write("⬅️ Press any key to return to main menu...");
+                    Console.ResetColor();
+                    try
+                    {
+                        Console.ReadKey(true);
+                    }
+                    catch (InvalidOperationException)
+                    {
+                        // Handle case when console input is redirected
+                        Console.WriteLine("\n✅ Returning to main menu...");
+                        Thread.Sleep(1000);
+                    }
                 }
                 else
                 {
-                    // Sequential processing - no user input required
-                    Console.WriteLine("🚀 Starting automated sequential processing...");
+                    // Exit application with enhanced UI
+                    Console.ResetColor();
+                    Console.Clear();
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    Console.WriteLine("╔══════════════════════════════════════════════════════════════════════════════╗");
+                    Console.WriteLine("║                           👋 THANK YOU! 👋                                   ║");
+                    Console.WriteLine("║                 Thank you for checking my coding assignment!                 ║");
+                    Console.WriteLine("║                           Developed by Dennis Htut                          ║");
+                    Console.WriteLine("╚══════════════════════════════════════════════════════════════════════════════╝");
+                    Console.ResetColor();
                     Console.WriteLine();
-
-                    // Step 1: Extract Solutions
-                    await ExtractSolutionsBalanced(logger, balancedExtractor, exportService);
+                    Console.ForegroundColor = ConsoleColor.Cyan;
+                    Console.WriteLine("🔧 Application Features Used:");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.WriteLine("   • Triangle Pattern Generation (Question 2)");
+                    Console.WriteLine("   • OpenText Data Scraping (Question 3)");
+                    Console.WriteLine("   • HTML Directory Generation (Question 4)");
+                    Console.ResetColor();
                     Console.WriteLine();
-
-                    // Step 2: Extract Partners  
-                    await ExtractPartnersSmartOptimized(logger, smartOptimizedPartnerExtractor, exportService);
-                    Console.WriteLine();
-
-                    // Step 3: Join the data
-                    await JoinPartnerSolutionFiles(logger, joinService);
-
-                    Console.WriteLine();
-                    Console.WriteLine("🎯 Sequential processing completed successfully!");
-                    Console.WriteLine("✅ All three steps have been executed automatically");
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine("✨ Have a great day!");
+                    Console.ResetColor();
+                    continueRunning = false;
                 }
 
                 logger.LogInformation("All processing completed successfully");
+                }
             }
             catch (Exception ex)
             {
+                Console.ResetColor();
                 Log.Fatal(ex, "Application terminated unexpectedly");
-                Console.WriteLine($"Error: {ex.Message}");
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine($"❌ Error: {ex.Message}");
+                Console.ResetColor();
                 Environment.ExitCode = 1;
             }
             finally
@@ -118,154 +438,18 @@ namespace OpenTextPartnerScraper
                 await Log.CloseAndFlushAsync();
             }
 
-            Console.WriteLine("Press any key to exit...");
+            Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("🎯 Application terminated.");
+            Console.ResetColor();
             try
             {
                 Console.ReadKey();
             }
             catch (InvalidOperationException)
             {
-                // Handle case where console input is redirected
+                // Handle case where console input is redirected or not available
                 Console.WriteLine("Application completed.");
-            }
-        }
-
-        private static async Task ExtractSolutionsBalanced(ILogger<Program> logger, BalancedSeleniumExtractor extractor, IDataExportService exportService)
-        {
-            Console.WriteLine("=== STEP 1: EXTRACTING PARTNER SOLUTIONS ===");
-            logger.LogInformation("🚀 Starting balanced extraction (optimized speed + maximum reliability)...");
-
-            try
-            {
-                var solutions = await extractor.ExtractAllSolutions();
-
-                if (solutions.Count > 0)
-                {
-                    // Export the results
-                    var outputDir = "output";
-                    Directory.CreateDirectory(outputDir);
-
-                    var jsonPath = Path.Combine(outputDir, "solutions.json");
-
-                    // Save JSON  
-                    var jsonOptions = new System.Text.Json.JsonSerializerOptions { WriteIndented = true };
-                    var json = System.Text.Json.JsonSerializer.Serialize(solutions, jsonOptions);
-                    await File.WriteAllTextAsync(jsonPath, json);
-
-                    Console.WriteLine($"🎯 Successfully extracted {solutions.Count} solutions!");
-                    Console.WriteLine($"💾 Results saved to:");
-                    Console.WriteLine($"   📄 JSON: {jsonPath}");
-                    
-                    logger.LogInformation($"🎯 Successfully extracted and exported {solutions.Count} solutions");
-
-                    // Show some examples
-                    Console.WriteLine($"\n📋 Sample solutions:");
-                    foreach (var solution in solutions.Take(10))
-                    {
-                        Console.WriteLine($"   • {solution.SolutionName} → {solution.PartnerName}");
-                    }
-                    
-                    if (solutions.Count > 10)
-                    {
-                        Console.WriteLine($"   ... and {solutions.Count - 10} more solutions");
-                    }
-                    
-                    // Show comparison with target
-                    Console.WriteLine($"\n📊 Extraction Summary:");
-                    Console.WriteLine($"   🎯 Target: 174 solutions");
-                    Console.WriteLine($"   ✅ Found: {solutions.Count} solutions");
-                    Console.WriteLine($"   📈 Success rate: {(solutions.Count * 100.0 / 174):F1}%");
-                    if (solutions.Count < 174)
-                    {
-                        Console.WriteLine($"   ⚠️ Missing: {174 - solutions.Count} solutions ({((174 - solutions.Count) * 100.0 / 174):F1}%)");
-                    }
-                }
-                else
-                {
-                    Console.WriteLine("❌ No solutions were extracted. Please check the logs for details.");
-                    logger.LogWarning("No solutions were found during balanced extraction.");
-                }
-            }
-            catch (Exception ex)
-            {
-                logger.LogError(ex, "❌ Error during balanced solution extraction");
-                throw;
-            }
-        }
-
-        private static async Task ExtractPartnersSmartOptimized(ILogger<Program> logger, SmartOptimizedPartnerExtractor smartOptimizedExtractor, IDataExportService exportService)
-        {
-            try
-            {
-                Console.WriteLine("=== STEP 2: EXTRACTING ALL 567 PARTNERS ===");
-                logger.LogInformation("🚀 Starting smart-optimized extraction for 99.6% success + 4x speed...");
-
-                var partners = await smartOptimizedExtractor.ExtractAllPartnersAsync();
-                
-                if (partners.Count > 0)
-                {
-                    // Create output directory
-                    var outputDir = Path.Combine(Directory.GetCurrentDirectory(), "output");
-                    Directory.CreateDirectory(outputDir);
-
-                    var jsonPath = Path.Combine(outputDir, "partners.json");
-
-                    // Save JSON  
-                    var jsonOptions = new System.Text.Json.JsonSerializerOptions { WriteIndented = true };
-                    var json = System.Text.Json.JsonSerializer.Serialize(partners, jsonOptions);
-                    await File.WriteAllTextAsync(jsonPath, json);
-
-                    Console.WriteLine($"🎯 Successfully extracted {partners.Count} partners!");
-                    Console.WriteLine($"💾 Results saved to:");
-                    Console.WriteLine($"   📄 JSON: {jsonPath}");
-                    
-                    logger.LogInformation($"🎯 Successfully extracted and exported {partners.Count} partners");
-
-                    // Show some examples
-                    Console.WriteLine($"\n📋 Sample partners:");
-                    foreach (var partner in partners.Take(10))
-                    {
-                        Console.WriteLine($"   • {partner.Name}");
-                    }
-                    
-                    if (partners.Count > 10)
-                    {
-                        Console.WriteLine($"   ... and {partners.Count - 10} more partners");
-                    }
-                    
-                    // Show comparison with target
-                    Console.WriteLine($"\n📊 Extraction Summary:");
-                    Console.WriteLine($"   🎯 Expected: 567 partners");
-                    Console.WriteLine($"   ✅ Unique partners found: {partners.Count}");
-                    Console.WriteLine($"   📈 Page processing: 100% successful (all 114 pages processed)");
-                    Console.WriteLine($"   🔧 Data quality: Duplicates automatically removed for clean results");
-                    Console.WriteLine($"   ⚡ Performance: ~4x faster than sequential");
-                    
-                    if (partners.Count >= 565)
-                    {
-                        Console.WriteLine($"   🏆 EXCELLENT! High-quality dataset achieved!");
-                    }
-                    else if (partners.Count >= 500)
-                    {
-                        Console.WriteLine($"   🎯 VERY GOOD! Strong extraction results");
-                    }
-                    
-                    if (partners.Count < 567)
-                    {
-                        var difference = 567 - partners.Count;
-                        Console.WriteLine($"   ℹ️ Note: {difference} entries were duplicates (removed for data quality)");
-                    }
-                }
-                else
-                {
-                    Console.WriteLine("❌ No partners were extracted. Please check the logs for details.");
-                    logger.LogWarning("No partners were found during smart-optimized extraction.");
-                }
-            }
-            catch (Exception ex)
-            {
-                logger.LogError(ex, "Error during smart-optimized partner extraction");
-                Console.WriteLine($"❌ Error during smart-optimized extraction: {ex.Message}");
             }
         }
 

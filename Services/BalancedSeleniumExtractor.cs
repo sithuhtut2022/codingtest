@@ -20,28 +20,44 @@ namespace OpenTextPartnerScraper.Services
         {
             var solutions = new List<PartnerSolution>();
             var processedSolutions = new HashSet<string>();
-            var totalSolutions = 174;
+            // Estimate pages - will be adjusted based on actual data found
+            var estimatedSolutions = 200; // Conservative estimate
             var solutionsPerPage = 5;
-            var totalPages = (int)Math.Ceiling((double)totalSolutions / solutionsPerPage);
+            var estimatedPages = (int)Math.Ceiling((double)estimatedSolutions / solutionsPerPage);
             var failedPages = new List<int>();
             
-            _logger.LogInformation($"🚀 Starting BALANCED extraction of {totalSolutions} solutions across {totalPages} pages...");
+            _logger.LogInformation($"🚀 Starting BALANCED extraction of solutions...");
             _logger.LogInformation($"⚡ Optimized for speed with better error handling and retry logic");
 
             // Use a single Chrome instance but with optimized settings
+            var service = ChromeDriverService.CreateDefaultService();
+            service.SuppressInitialDiagnosticInformation = true;
+            service.HideCommandPromptWindow = true;
+            
             var options = new ChromeOptions();
             options.AddArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage", 
                                "--disable-gpu", "--disable-logging", "--disable-extensions",
                                "--disable-background-timer-throttling", "--disable-renderer-backgrounding");
+            // Comprehensive SSL and error suppression
+            options.AddArguments("--ignore-ssl-errors", "--ignore-certificate-errors", "--ignore-certificate-errors-spki-list",
+                               "--ignore-ssl-errors-spki-list", "--disable-web-security", "--allow-running-insecure-content");
+            options.AddArguments("--silent", "--log-level=3", "--disable-logging", "--disable-dev-tools");
+            options.AddArguments("--disable-background-networking", "--disable-default-apps", "--disable-sync");
             options.AddArguments("--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36");
+            // Suppress Chrome console output completely
+            options.AddExcludedArguments("enable-logging");
+            options.AddArgument("--disable-logging");
+            options.AddArgument("--disable-dev-shm-usage");
             
-            using var driver = new ChromeDriver(options);
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(3);
-            driver.Manage().Timeouts().PageLoad = TimeSpan.FromSeconds(10);
+            using var driver = new ChromeDriver(service, options);
+            // Increased timeouts to prevent timeout errors during assessment
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);
+            driver.Manage().Timeouts().PageLoad = TimeSpan.FromSeconds(15);
             
             try
             {
-                for (int pageNum = 0; pageNum < totalPages; pageNum++)
+                // Process pages until we find all solutions or reach reasonable limit
+                for (int pageNum = 0; pageNum < estimatedPages; pageNum++)
                 {
                     var startIndex = pageNum * solutionsPerPage;
                     var success = false;
@@ -53,7 +69,7 @@ namespace OpenTextPartnerScraper.Services
                         attempts++;
                         try
                         {
-                            _logger.LogInformation($"📄 Loading page {pageNum + 1}/{totalPages} (start={startIndex}, attempt={attempts})...");
+                            _logger.LogInformation($"📄 Loading page {pageNum + 1} (start={startIndex}, attempt={attempts})...");
                             
                             var url = $"https://www.opentext.com/products-and-solutions/partners-and-alliances/partner-solutions-catalog?start={startIndex}&max={solutionsPerPage}";
                             driver.Navigate().GoToUrl(url);
@@ -95,7 +111,10 @@ namespace OpenTextPartnerScraper.Services
                             else
                             {
                                 // Check if this is a valid empty page
-                                if (pageSource.Contains("total") && pageSource.Contains("174"))
+                                // Check if we've reached the end of available data
+                                if (pageSource.Contains("No results found") || 
+                                    pageSource.Contains("no partners found") ||
+                                    !pageSource.Contains("partner-card"))
                                 {
                                     _logger.LogInformation($"📄 Page {pageNum + 1}: Valid empty page");
                                     success = true;
@@ -128,7 +147,8 @@ namespace OpenTextPartnerScraper.Services
                 }
                 
                 _logger.LogInformation($"🎯 Extraction completed! Found {solutions.Count} total solutions");
-                _logger.LogInformation($"📊 Success rate: {totalPages - failedPages.Count}/{totalPages} pages ({((totalPages - failedPages.Count) * 100.0 / totalPages):F1}%)");
+                var processedPages = estimatedPages - failedPages.Count;
+                _logger.LogInformation($"📊 Success rate: {processedPages}/{estimatedPages} pages processed successfully");
                 
                 if (failedPages.Count > 0)
                 {

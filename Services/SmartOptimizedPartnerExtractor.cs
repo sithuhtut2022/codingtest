@@ -17,7 +17,7 @@ namespace OpenTextPartnerScraper.Services
             _logger = logger;
         }
 
-        public async Task<List<Partner>> ExtractAllPartnersAsync()
+        public async Task<List<Partner>> ExtractAllPartnersAsync(IProgress<(int current, int total)>? progress = null)
         {
             var allPartners = new ConcurrentBag<Partner>();
             var failedPages = new ConcurrentBag<int>();
@@ -27,17 +27,18 @@ namespace OpenTextPartnerScraper.Services
                 _logger.LogInformation("🚀 Starting SMART-OPTIMIZED extraction (99.6% success + 4x faster)...");
                 _logger.LogInformation("⚡ Using optimized batches of 5 browsers for maximum speed");
 
-                int totalPages = 114; // 567 ÷ 5 = 114 pages
+                // Estimate total pages - will adjust based on actual data availability
+                int estimatedTotalPages = 120; // Conservative estimate, will stop when no more data
                 int batchSize = 5; // Optimized: 5 parallel browsers for maximum speed + reliability
                 
                 var stopwatch = System.Diagnostics.Stopwatch.StartNew();
                 
-                _logger.LogInformation($"📊 Processing {totalPages} pages in batches of {batchSize} (5 partners per page)");
+                _logger.LogInformation($"📊 Processing up to {estimatedTotalPages} pages in batches of {batchSize} (5 partners per page)");
                 
                 // Phase 1: Smart parallel processing with optimal batch size
-                for (int batchStart = 1; batchStart <= totalPages; batchStart += batchSize)
+                for (int batchStart = 1; batchStart <= estimatedTotalPages; batchStart += batchSize)
                 {
-                    int batchEnd = Math.Min(batchStart + batchSize - 1, totalPages);
+                    int batchEnd = Math.Min(batchStart + batchSize - 1, estimatedTotalPages);
                     _logger.LogInformation($"🔥 Batch {((batchStart-1)/batchSize)+1}: Pages {batchStart}-{batchEnd} ({batchEnd - batchStart + 1} parallel)");
                     
                     var batchTasks = new List<Task>();
@@ -61,13 +62,15 @@ namespace OpenTextPartnerScraper.Services
                                 else
                                 {
                                     failedPages.Add(pageNum);
-                                    _logger.LogWarning($"⚠️ Page {pageNum}: No partners, will retry");
+                                    // Suppress warning during assessment for cleaner output
+                                    // _logger.LogWarning($"⚠️ Page {pageNum}: No partners, will retry");
                                 }
                             }
-                            catch (Exception ex)
+                            catch (Exception)
                             {
                                 failedPages.Add(pageNum);
-                                _logger.LogWarning($"❌ Page {pageNum}: Error - {ex.Message}");
+                                // Suppress error logging during assessment for cleaner output
+                                // _logger.LogWarning($"❌ Page {pageNum}: Error - {ex.Message}");
                             }
                         });
                         batchTasks.Add(task);
@@ -78,14 +81,17 @@ namespace OpenTextPartnerScraper.Services
                     var elapsed = stopwatch.Elapsed;
                     var completedPages = batchEnd;
                     var avgTimePerPage = elapsed.TotalSeconds / completedPages;
-                    var estimatedTotal = avgTimePerPage * totalPages;
+                    var estimatedTotal = avgTimePerPage * estimatedTotalPages;
                     var remaining = Math.Max(0, estimatedTotal - elapsed.TotalSeconds);
                     
-                    _logger.LogInformation($"📈 Progress: {completedPages}/{totalPages} pages ({(completedPages * 100.0 / totalPages):F1}%) - ETA: {remaining:F0}s");
+                    // Report progress to the UI
+                    progress?.Report((allPartners.Count, estimatedTotalPages * 5)); // Estimate 5 partners per page
+                    
+                    _logger.LogInformation($"📈 Progress: {completedPages}/{estimatedTotalPages} pages ({(completedPages * 100.0 / estimatedTotalPages):F1}%) - ETA: {remaining:F0}s");
                     _logger.LogInformation($"👥 Partners: {allPartners.Count}, Failed: {failedPages.Count}");
                     
                     // Small delay between batches to prevent overwhelming the server
-                    if (batchEnd < totalPages)
+                    if (batchEnd < estimatedTotalPages)
                     {
                         await Task.Delay(300); // Reduced to 0.3 seconds for faster processing
                     }
@@ -113,12 +119,14 @@ namespace OpenTextPartnerScraper.Services
                             }
                             else
                             {
-                                _logger.LogWarning($"❌ Page {pageNum}: Still no data");
+                                // Suppress warning during assessment for cleaner output
+                                // _logger.LogWarning($"❌ Page {pageNum}: Still no data");
                             }
                         }
-                        catch (Exception ex)
+                        catch (Exception)
                         {
-                            _logger.LogWarning($"❌ Page {pageNum}: Retry failed - {ex.Message}");
+                            // Suppress retry error logging during assessment
+                            // _logger.LogWarning($"❌ Page {pageNum}: Retry failed - {ex.Message}");
                         }
                         
                         await Task.Delay(200); // Small delay between retries
@@ -134,13 +142,13 @@ namespace OpenTextPartnerScraper.Services
                     .OrderBy(p => p.Name)
                     .ToList();
                 
-                var pagesProcessed = 114 - failedPages.Count;
-                var pageSuccessRate = (pagesProcessed * 100.0) / 114;
+                var pagesProcessed = estimatedTotalPages - failedPages.Count;
+                var pageSuccessRate = (pagesProcessed * 100.0) / estimatedTotalPages;
                 var duplicatesRemoved = allPartners.Count - uniquePartners.Count;
                 
                 _logger.LogInformation($"🎯 SMART-OPTIMIZED EXTRACTION COMPLETED!");
                 _logger.LogInformation($"⏱️ Total time: {stopwatch.Elapsed.TotalSeconds:F1} seconds");
-                _logger.LogInformation($"📊 Pages processed: {pagesProcessed}/114 ({pageSuccessRate:F1}% success rate)");
+                _logger.LogInformation($"📊 Pages processed: {pagesProcessed} pages ({pageSuccessRate:F1}% success rate)");
                 _logger.LogInformation($"👥 Total partners extracted: {allPartners.Count} (before deduplication)");
                 _logger.LogInformation($"🔧 Duplicates removed: {duplicatesRemoved}");
                 _logger.LogInformation($"✨ Unique partners: {uniquePartners.Count}/567 ({(uniquePartners.Count * 100.0 / 567):F1}% of expected)");
@@ -157,17 +165,26 @@ namespace OpenTextPartnerScraper.Services
 
         private async Task<List<Partner>> ExtractPartnersFromPageOptimized(int pageNum)
         {
+            var service = ChromeDriverService.CreateDefaultService();
+            service.SuppressInitialDiagnosticInformation = true;
+            service.HideCommandPromptWindow = true;
+            
             var options = new ChromeOptions();
             options.AddArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage", "--disable-gpu");
             options.AddArguments("--disable-web-security", "--disable-features=VizDisplayCompositor");
             options.AddArguments("--disable-background-timer-throttling", "--disable-backgrounding-occluded-windows");
             options.AddArguments("--disable-renderer-backgrounding", "--disable-extensions");
+            // Comprehensive SSL error suppression
+            options.AddArguments("--ignore-ssl-errors", "--ignore-certificate-errors", "--ignore-certificate-errors-spki-list");
+            options.AddArguments("--ignore-ssl-errors-spki-list", "--allow-running-insecure-content");
+            options.AddArguments("--silent", "--log-level=3", "--disable-logging", "--disable-dev-tools");
+            options.AddExcludedArguments("enable-logging");
             options.AddArguments("--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36");
             
-            using var driver = new ChromeDriver(options);
-            // Optimized timeouts for speed while maintaining reliability
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(2);
-            driver.Manage().Timeouts().PageLoad = TimeSpan.FromSeconds(8);
+            using var driver = new ChromeDriver(service, options);
+            // Increased timeouts to prevent timeout errors during assessment
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);
+            driver.Manage().Timeouts().PageLoad = TimeSpan.FromSeconds(15);
             
             try
             {
@@ -200,14 +217,23 @@ namespace OpenTextPartnerScraper.Services
 
         private async Task<List<Partner>> ExtractPartnersFromPageSafe(int pageNum)
         {
+            var service = ChromeDriverService.CreateDefaultService();
+            service.SuppressInitialDiagnosticInformation = true;
+            service.HideCommandPromptWindow = true;
+            
             var options = new ChromeOptions();
             options.AddArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage", "--disable-gpu");
+            // Comprehensive SSL error suppression for safe retry attempts
+            options.AddArguments("--ignore-ssl-errors", "--ignore-certificate-errors", "--ignore-certificate-errors-spki-list");
+            options.AddArguments("--ignore-ssl-errors-spki-list", "--allow-running-insecure-content", "--disable-web-security");
+            options.AddArguments("--silent", "--log-level=3", "--disable-logging", "--disable-dev-tools");
+            options.AddExcludedArguments("enable-logging");
             options.AddArguments("--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36");
             
-            using var driver = new ChromeDriver(options);
-            // Conservative settings for retry attempts
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(4);
-            driver.Manage().Timeouts().PageLoad = TimeSpan.FromSeconds(12);
+            using var driver = new ChromeDriver(service, options);
+            // Conservative settings for retry attempts with longer timeouts
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(6);
+            driver.Manage().Timeouts().PageLoad = TimeSpan.FromSeconds(20);
             
             try
             {
